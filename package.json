@@ -7,7 +7,8 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "android-sync": "cmd /c \"%LOCALAPPDATA%\\Android\\Sdk\\platform-tools\\adb reverse tcp:8081 tcp:8081 && %LOCALAPPDATA%\\Android\\Sdk\\platform-tools\\adb reverse tcp:8080 tcp:8080\""
   },
   "dependencies": {
     "@react-native/new-app-screen": "0.85.3",
@@ -17,7 +18,8 @@
     "react": "19.2.3",
     "react-native": "0.85.3",
     "react-native-safe-area-context": "^5.8.0",
-    "react-native-screens": "^4.25.2"
+    "react-native-screens": "^4.25.2",
+    "react-native-vector-icons": "^10.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
